@@ -1,3 +1,5 @@
+require 'uglifier'
+
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -16,24 +18,36 @@ page '/*.txt', layout: false
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
 #  which_fake_page: "Rendering a fake page with a local variable" }
 
-# General configuration
+# Localization
+# activate :i18n
 
-###
-# Helpers
-###
+# Slim
+Slim::Engine.set_options format: :html
+Slim::Engine.set_options pretty: false
 
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+# Assets
+set :css_dir, 'dist/stylesheets'
+set :js_dir, 'dist/javascripts'
+set :images_dir, 'dist/images'
+
+# External pipeline
+activate :external_pipeline,
+  name: :gulp,
+  command: build? ? 'gulp build --production' : './node_modules/gulp/bin/gulp.js',
+  source: "dist",
+  latency: 1
 
 # Build-specific configuration
 configure :build do
-  # Minify CSS on build
-  # activate :minify_css
+  ignore 'assets/*'
+  activate :gzip
+  activate :minify_html, remove_intertag_spaces: true
+  activate :asset_hash
+end
 
-  # Minify Javascript on build
-  # activate :minify_javascript
+#helpers
+helpers do
+  def markdown(text)
+    Tilt['markdown'].new { text }.render
+  end
 end
