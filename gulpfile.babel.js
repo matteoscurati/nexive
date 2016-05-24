@@ -217,7 +217,7 @@ gulp.task('reload-template', () => {
 gulp.task('clean', tasks.clean);
 gulp.task('runserver', tasks.runserver);
 gulp.task('sass', tasks.sass);
-gulp.task('fonts', tasks.font);
+gulp.task('fonts', tasks.fonts);
 gulp.task('images', tasks.images);
 gulp.task('iconfont', tasks.iconfont);
 gulp.task('sprites', tasks.sprites);

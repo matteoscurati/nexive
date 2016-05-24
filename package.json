@@ -6,7 +6,7 @@
   "author": "Matteo Scurati",
   "license": "ISC",
   "browser": {
-    "modernizr": "./source/javascripts/vendor/modernizr.js",
+    "modernizr": "./source/assets/javascripts/vendor/modernizr.js",
     "jQuery": "./node_modules/jquery/dist/jquery.js"
   },
   "browserify-shim": {
