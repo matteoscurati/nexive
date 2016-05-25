@@ -12,5 +12,8 @@ $(document).ready(() => {
 
 
 $(document).ready(() => {
-  $('.hero__actions').sticky({topSpacing:0});
+  $('.hero__actions').sticky({
+    topSpacing:0,
+    zIndex: 100
+  });
 });

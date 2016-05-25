@@ -1,0 +1,28 @@
+.image
+  heigth: 80vh
+  background-color: $light-body-color
+  +vertical-padding(6)
+
+.image__body
+  width: 100%
+
+.image__title
+  +heading-font-family
+  +font-size(beta)
+  +padding-bottom(1)
+
+.image__title--right
+  @extend .image__title
+  text-align: right
+
+.image__subtitle
+  +heading-font-family
+  color: white
+  +font-size(gamma)
+
+.image__subtitle--right
+  @extend .image__subtitle
+  text-align: right
+
+.image__grid
+  +padding-top(5)
