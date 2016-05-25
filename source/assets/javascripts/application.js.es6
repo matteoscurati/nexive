@@ -1,4 +1,5 @@
 import $ from 'jQuery';
+import './vendor/jQuery-One-Page-Nav.js';
 
 require('jquery-ui');
 require('jquery-ui-touch-punch');
@@ -15,5 +16,10 @@ $(document).ready(() => {
   $('.hero__actions').sticky({
     topSpacing:0,
     zIndex: 100
+  });
+});
+
+$(document).ready(() => {
+  $('#nav').onePageNav({
   });
 });
