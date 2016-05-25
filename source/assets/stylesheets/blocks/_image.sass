@@ -13,6 +13,9 @@
   &.is-info
     background-color: $beige
 
+  &.is-slim
+    background-image: image-url('slim.jpg')
+
 .image__body
   width: 100%
 
@@ -123,3 +126,24 @@
 
   +at-breakpoint(desk)
     text-align: center
+
+.image__slim
+
+.image__slim--title
+
+  h2
+    +heading-font-family
+    +font-size(alpha)
+
+  h3
+    +heading-font-family
+    +font-size(delta)
+
+  span.border__bottom
+    border-bottom: 1px $blue solid
+
+  span.is-orange
+    color: $orange
+
+  span.is-blue
+    color: $blue

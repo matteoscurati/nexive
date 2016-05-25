@@ -1,12 +1,37 @@
-.wrap.space--both-3#slim
-  .grid--middle
-    .grid__item.width-12-12.tab-6-12.desk-6-12.wow.rollIn data-wow-delay="0.5s"
-      = image_tag "http://dummyimage.com/640x4:3", class: "full"
-    .grid__item.width-12-12.tab-6-12.desk-6-12.wow.rollIn data-wow-delay="0.5s"
-      .formatted-content
-        h2 titolo
-        h3 sottotitolo
+.image.space--both-3.is-slim#slim
+  .wrap
+      .image__grid
+        .grid--middle
+          .grid__item.width-12-12.lap-6-12.wow.zoomIn data-wow-delay="0.4s"
+            = image_tag "slim1.png", class: "full"
+          .grid__item.width-12-12.lap-6-12.wow.zoomIn data-wow-delay="0.4s"
+            .image__slim--title
+              h2
+                span.border__bottom
+                  span.is-orange Sistema 
+                  span.is-blue Slim
+              h3
+                span.is-blue
+                  | Il pacchetto a misura di cassetta che avvisa
+                  br
+                  | quando arriva.
+              p
+                | È arrivata la spedizione che rivoluzionerà l'e-commerce
+                br
+                | dei piccoli oggetti.
 .wrap.formatted-content.space--bottom-3
-  h2 Titolo
-  p = lorem.paragraph
-  p = lorem.paragraph
+  h2 SISTEMA SLIM, IL PACCHETTO A MISURA DI CASSETTA CHE AVVISA QUANDO ARRIVA
+  p
+    | Le ultime tendenze dell’ e-commerce evidenziano una crescita nella compravendita online di piccoli oggetti come libri tascabili, cd, accessori per la telefonia e l’elettronica di consumo. 
+    strong Nexive risponde all’evoluzione del mercato con Sistema Slim, il rivoluzionario sistema di spedizione per pacchetti super piccoli e leggeri, pratico e conveniente nel prezzo.
+  p
+    | Con Sistema Slim i 
+    strong prodotti vengono recapitati direttamente nella cassetta delle lettere 
+    | del destinatario, senza obbligo di firma. E ad avvisarlo dell’avvenuta consegna sarà un 
+    strong SMS 
+    | o 
+    strong un'email.
+  p
+    | Pratico, veloce e conveniente!
+  p.space--top-2
+    a.button--huge href="http://www.nexive.it/sistema-di-recapito-pacchi/sistema-slim" target="_blank" Scopri di più
