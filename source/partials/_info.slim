@@ -2,21 +2,21 @@
   .wrap
     .image__body
       .image__title
-        h2 Titolo dell'immagine
+        h2 Infografica
       .image__subtitle
         h3 Questo è il sottotitolo dell'immagine
       .image__grid
         .grid--middle
-          .grid__item.width-12-12.desk-6-12.desk-push-3-12
+          .grid__item.width-12-12.desk-8-12
             = image_tag "http://dummyimage.com/640x4:3", class: "full"
-          .grid__item.width-12-12.desk-3-12.desk-pull-6-12
-            .grid
+          .grid__item.width-12-12.desk-4-12
+            .grid.image__grid--center
               .grid__item.width-12-12
                 = image_tag "http://dummyimage.com/100"
               .grid__item.width-12-12
                 = image_tag "http://dummyimage.com/100"
-          .grid__item.width-12-12.desk-3-12
-            .grid
+              .grid__item.width-12-12
+                = image_tag "http://dummyimage.com/100"
               .grid__item.width-12-12
                 = image_tag "http://dummyimage.com/100"
               .grid__item.width-12-12

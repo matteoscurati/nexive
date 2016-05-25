@@ -10,19 +10,25 @@
   +heading-font-family
   +font-size(beta)
   +padding-bottom(1)
+  text-align: left
 
-.image__title--right
-  @extend .image__title
-  text-align: right
+  +at-breakpoint(desk)
+    text-align: right
 
 .image__subtitle
   +heading-font-family
   color: white
   +font-size(gamma)
+  text-align: left
 
-.image__subtitle--right
-  @extend .image__subtitle
-  text-align: right
+  +at-breakpoint(desk)
+    text-align: right
 
 .image__grid
   +padding-top(5)
+
+.image__grid--center
+  text-align: left
+
+  +at-breakpoint(desk)
+    text-align: center
