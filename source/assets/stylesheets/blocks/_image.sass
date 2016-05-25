@@ -1,5 +1,5 @@
 .image
-  +vertical-padding(5)
+  +vertical-padding(2)
   background-repeat: no-repeat
   background-position: center center
   background-size: cover
@@ -128,6 +128,12 @@
 
 .image__grid--no-padding-top
   +padding-top(0)
+
+  &.is-hero
+    +margin-top(1)
+
+    +at-breakpoint(lap)
+      +margin-top(-15)
 
 .image__grid--center
   text-align: left
