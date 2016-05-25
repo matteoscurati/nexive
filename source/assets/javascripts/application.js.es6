@@ -5,6 +5,7 @@ require('jquery-ui');
 require('jquery-ui-touch-punch');
 require('modernizr');
 require('sticky');
+require('wow');
 
 $(document).ready(() => {
   const text = "Testo di prova"
@@ -22,4 +23,9 @@ $(document).ready(() => {
 $(document).ready(() => {
   $('#nav').onePageNav({
   });
+});
+
+$(document).ready(() => {
+  new WOW().init();
+  const wow = new WOW({});
 });
