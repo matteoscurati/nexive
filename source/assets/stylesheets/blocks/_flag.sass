@@ -23,7 +23,8 @@
     vertical-align: bottom
 
 .flag__image
-  padding-right: $grid-gutter
+  +padding-right(8)
+  +margin-right(1)
 
   > img
     display: block
@@ -33,6 +34,31 @@
     padding-right: 0
     padding-left: $grid-gutter
 
+.flag__digital
+  +padding(5)
+  border-radius: 8px
+  background-color: $orange
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: auto
+
+  &.is-dou
+    background-image: image-url('double.png')
+
+  &.is-sec
+    background-image: image-url('sec.png')
+
+  &.is-comod
+    background-image: image-url('comod.png')
+
+  &.is-eff
+    background-image: image-url('eff.png')
+
 .flag__body
+  +padding-left(1)
   width: 100%
+  color: white
+
+.flag__text
+  +light-font-family
 

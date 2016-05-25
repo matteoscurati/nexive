@@ -7,6 +7,9 @@
   &.is-hero
     background-image: image-url('nexive_background.jpg')
 
+  &.is-digitale
+    background-image: image-url('digitale-bg.jpg')
+
 .image__body
   width: 100%
 
@@ -37,6 +40,13 @@
     color: white
     +light-font-family
 
+  &.is-digitale
+    color: orange
+    +heading-font-family
+
+    span.is-blue
+      color: $blue
+
 .image__subtitle
   +heading-font-family
   color: white
@@ -48,6 +58,10 @@
 
   &.is-hero
     color: $orange
+
+  &.is-digitale
+    +light-font-family
+    color: white
 
 .image__grid
   +padding-top(5)

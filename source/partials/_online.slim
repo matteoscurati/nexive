@@ -1,23 +1,52 @@
-.image.space--both-3#digitale
+.image.space--both-3.is-digitale#digitale
   .wrap
     .image__body
-      .image__title
-        h2 Titolo dell'immagine
-      .image__subtitle
-        h3 Questo è il sottotitolo dell'immagine
+      .image__title.is-digitale
+        h2
+          | Raccomandata 
+          span.is-blue Digitale
+      .image__border
+      .image__subtitle.is-digitale
+        h3
+          | DA OGGI È ANCHE ON LINE,
+          br
+          | DITE ADDIO ALLA FILA.
       .image__grid
         .grid--middle
-          .grid__item.width-12-12.desk-6-12.desk-push-3-12.wow.zoomIn data-wow-delay="0.4s"
-            = image_tag "http://dummyimage.com/640x4:3", class: "full"
+          .grid__item.width-12-12.lap-10-12.desk-6-12.desk-push-3-12.wow.zoomIn data-wow-delay="0.4s"
+            = image_tag "busta-digitale.png", class: "full"
           .grid__item.width-12-12.desk-3-12.desk-pull-6-12
             .grid
-              .grid__item.width-12-12.wow.zoomIn data-wow-delay="0.5s"
-                = image_tag "http://dummyimage.com/100"
-              .grid__item.width-12-12.wow.zoomIn data-wow-delay="0.9s"
-                = image_tag "http://dummyimage.com/100"
+              .grid__item.width-12-12.wow.zoomIn.space--top-2 data-wow-delay="0.5s"
+                .flag
+                  .flag__digital.is-dou
+                  .flag__body
+                    h4 DOPPIO FORMATO
+                    .flag__text
+                      p Cartaceo o digitale
+              .grid__item.width-12-12.wow.zoomIn.space--top-2 data-wow-delay="0.9s"
+                .flag
+                  .flag__digital.is-sec
+                  .flag__body
+                    h4 SICUREZZA
+                    .flag__text
+                      p Il digitale con lo stesso valore legale del cartaceo.
           .grid__item.width-12-12.desk-3-12
             .grid
-              .grid__item.width-12-12.wow.zoomIn data-wow-delay="0.8s"
-                = image_tag "http://dummyimage.com/100"
-              .grid__item.width-12-12.wow.zoomIn data-wow-delay="1.5s"
-                = image_tag "http://dummyimage.com/100"
+              .grid__item.width-12-12.wow.zoomIn.space--top-2 data-wow-delay="0.8s"
+                .flag
+                  .flag__digital.is-comod
+                  .flag__body
+                    h4 COMODITÀ
+                    .flag__text
+                      p
+                        | Tanti punti Nexive per il ritiro.
+                        br
+                        | PIM segreto per scaricarla online.
+              .grid__item.width-12-12.wow.zoomIn.space--top-2 data-wow-delay="1.5s"
+                .flag
+                  .flag__digital.is-eff
+                  .flag__body
+                    h4 EFFICIENZA
+                    .flag__text
+                      p Più consegne per il mittente.
