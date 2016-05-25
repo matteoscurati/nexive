@@ -1,10 +1,28 @@
 .image
-  heigth: 80vh
-  background-color: $light-body-color
-  +vertical-padding(6)
+  +vertical-padding(9)
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: cover
+
+  &.is-hero
+    background-image: image-url('nexive_background.jpg')
 
 .image__body
   width: 100%
+
+.image__border
+  text-align: left
+  height: 0.7rem
+  background-image: image-url('ltr.svg')
+  background-repeat: no-repeat
+  background-position: center left
+  +margin-bottom(0.8)
+
+  +at-breakpoint(lap)
+    height: 0.8rem
+    background-image: image-url('rtl.svg')
+    text-align: right
+    background-position: center right
 
 .image__title
   +heading-font-family
@@ -12,8 +30,12 @@
   +padding-bottom(1)
   text-align: left
 
-  +at-breakpoint(desk)
+  +at-breakpoint(lap)
     text-align: right
+
+  &.is-hero
+    color: white
+    +light-font-family
 
 .image__subtitle
   +heading-font-family
@@ -21,8 +43,11 @@
   +font-size(gamma)
   text-align: left
 
-  +at-breakpoint(desk)
+  +at-breakpoint(lap)
     text-align: right
+
+  &.is-hero
+    color: $orange
 
 .image__grid
   +padding-top(5)
@@ -30,5 +55,5 @@
 .image__grid--center
   text-align: left
 
-  +at-breakpoint(desk)
+  +at-breakpoint(lap)
     text-align: center
