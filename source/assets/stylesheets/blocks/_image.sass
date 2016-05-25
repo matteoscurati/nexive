@@ -16,6 +16,14 @@
   &.is-slim
     background-image: image-url('slim.jpg')
 
+  &.is-close
+    background-size: cover
+    +vertical-padding(10)
+    background-image: image-url('naxive-big.png')
+
+    +at-breakpoint(desk)
+      +vertical-padding(15)
+
 .image__body
   width: 100%
 
