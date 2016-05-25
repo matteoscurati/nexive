@@ -9,11 +9,11 @@
   display: table
   width: 100%
   text-align: center
+  +vertical-padding(7)
 
 .hero__body__inner
   display: table-cell
   vertical-align: middle
-  +vertical-padding(4)
 
 .hero__heading
   +heading-font-family
@@ -32,7 +32,14 @@
   margin-right: auto
 
 .hero__actions
-  +margin-top(2)
+  display: block
+  width: 100%
+  +vertical-padding(2)
+  background-color: $base-body-color
+  color: white
+
+.hero__actions--inner
+  text-align: center
 
 .hero--primary
   @extend .hero

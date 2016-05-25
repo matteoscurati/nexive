@@ -7,11 +7,13 @@
   "license": "ISC",
   "browser": {
     "modernizr": "./source/assets/javascripts/vendor/modernizr.js",
-    "jQuery": "./node_modules/jquery/dist/jquery.js"
+    "jQuery": "./node_modules/jquery/dist/jquery.js",
+    "sticky": "./source/assets/javascripts/vendor/sticky.js"
   },
   "browserify-shim": {
     "jQuery": "$",
     "modernizr": "Modernizr",
+    "sticky": "sticky",
     "three": "global:THREE"
   },
   "browserify": {
