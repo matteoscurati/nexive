@@ -8,13 +8,8 @@ require('sticky');
 require('wow');
 
 $(document).ready(() => {
-  const text = "Testo di prova"
-  console.log(text, ": funziona");
-});
-
-
-$(document).ready(() => {
-  $('.hero__actions').sticky({
+  const actions = $('.hero__actions--desk');
+  actions.sticky({
     topSpacing:0,
     zIndex: 100
   });
@@ -22,6 +17,11 @@ $(document).ready(() => {
 
 $(document).ready(() => {
   $('#nav').onePageNav({
+  });
+});
+
+$(document).ready(() => {
+  $('#nav--mobile').onePageNav({
   });
 });
 

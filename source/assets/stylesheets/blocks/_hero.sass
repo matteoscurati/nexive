@@ -32,17 +32,37 @@
   margin-right: auto
 
 .hero__actions
-  display: block
   width: 100%
   +vertical-padding(2)
-  background-color: $base-body-color
+  background-color: $black
   color: white
   z-index: 100
+  margin-top: -1px
 
   a
     color: white
     text-decoration: none
     text-transform: uppercase
+
+.hero__actions--desk
+  @extend .hero__actions
+  display: none
+
+  +at-breakpoint(lap)
+    display: block
+
+.hero__actions--mobile
+  @extend .hero__actions
+  display: block
+
+  +at-breakpoint(lap)
+    display: none
+
+.sticky-wrapper
+  display: none
+
+  +at-breakpoint(lap)
+    display: block
 
 .hero__actions--inner
   text-align: center
