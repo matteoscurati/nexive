@@ -43,6 +43,7 @@ configure :build do
   activate :gzip
   activate :minify_html, remove_intertag_spaces: true
   activate :asset_hash
+  activate :relative_assets
 end
 
 #helpers
