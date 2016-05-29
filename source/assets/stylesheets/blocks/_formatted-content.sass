@@ -1,4 +1,6 @@
 .formatted-content
+  color: $dark-grey
+
   h1, h2, h3, h4, h5, h6, hgroup,
   ul, ol, dd, p, figure, pre, table,
   fieldset, hr, form, blockquote
@@ -17,7 +19,7 @@
     list-style-type: decimal
 
   h1, h2, h3, h4, h5, h6
-    +heading-font-family
+    +text-font-family
     +margin-top(2)
 
     &:first-child
@@ -47,3 +49,6 @@
       @extend .icon--quotes:before
       +position(absolute, 0 null null 0)
 
+  p
+    +text-font-family
+    +font-size(17px)
