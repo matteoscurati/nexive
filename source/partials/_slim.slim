@@ -34,4 +34,5 @@
   p
     | Pratico, veloce e conveniente!
   p.space--top-2
-    a.button--huge href="http://www.nexive.it/sistema-di-recapito-pacchi/sistema-slim" target="_blank" Scopri di più
+    = link_to "http://www.nexive.it/sistema-di-recapito-pacchi/sistema-slim", target: "_blank" do
+      = image_tag "button__scopri.png", class: "nexive"
