@@ -2,6 +2,12 @@
   display: table
   width: 100%
 
+.flag--space
+  +margin-bottom(0)
+
+  +at-breakpoint(lap)
+    +margin-bottom(3)
+
 .flag--rev,
 .flag--top,
 .flag--bottom
@@ -35,12 +41,12 @@
     padding-left: $grid-gutter
 
 .flag__digital
-  +padding(5)
-  border-radius: 8px
+  +padding(3)
+  border-radius: 5px
   background-color: $orange
   background-repeat: no-repeat
   background-position: center center
-  background-size: auto
+  background-size: 50%
 
   &.is-dou
     background-image: image-url('double.png')
