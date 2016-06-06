@@ -1,17 +1,21 @@
 .wrap.space--both-3
-  .formatted-content
-    h2 NEXIVE RIVOLUZIONA LA RACCOMANDATA
-    p
-      strong Nexive guida l'evoluzione del mercato postale e presenta la nuova raccomandata con giacenza digitale. 
-      | Una novit&agrave; destinata a rivoluzionare tempi e modalit&agrave; del rapporto tra cittadini, aziende e pubblica amministrazione, in linea con gli obiettivi di semplificazione e diffusione della cultura digitale previsti dall'Agenda Digitale italiana e con le attuali riforme.
-    p
-      | Il funzionamento sar&agrave; semplicissimo: 
-      strong in caso di assenza del destinatario, verr&agrave; lasciato un avviso di giacenza indicante sia un luogo fisico per il ritiro, sia un codice pin 
-      | Il destinatario potr&agrave; autonomamente decidere se scaricare online la propria raccomandata, e in tal caso l'accesso al sito verr&agrave; tracciato confermandone la presa in carico, oppure se recuperare materialmente la busta presso il luogo di giacenza, come si fa gi&agrave; oggi. 
-      strong Semplice no?
-    h3.space--top-2
-      | ASCOLTA LE RISPOSTE DEGLI ESPERTI NEXIVE SU RADIO24
-    = partial "partials/audio"
-    p.space--top-2
-      = link_to "http://www.nexive.it/stampa-recapito-postale/servizi-recapito/raccomandata-digitale", target: "_blank" do
-        = image_tag "button__scopri.png", class: "nexive"
+  .grid
+    .grid__item.width-12-12.lap-6-12
+      .formatted-content
+        h2 NEXIVE RIVOLUZIONA LA RACCOMANDATA
+        p
+          strong Nexive guida l'evoluzione del mercato postale e presenta la nuova raccomandata con giacenza digitale. 
+          | Una novit&agrave; destinata a rivoluzionare tempi e modalit&agrave; del rapporto tra cittadini, aziende e pubblica amministrazione, in linea con gli obiettivi di semplificazione e diffusione della cultura digitale previsti dall'Agenda Digitale italiana e con le attuali riforme.
+        p
+          | Il funzionamento sar&agrave; semplicissimo: 
+          strong in caso di assenza del destinatario, verr&agrave; lasciato un avviso di giacenza indicante sia un luogo fisico per il ritiro, sia un codice pin 
+          | Il destinatario potr&agrave; autonomamente decidere se scaricare online la propria raccomandata, e in tal caso l'accesso al sito verr&agrave; tracciato confermandone la presa in carico, oppure se recuperare materialmente la busta presso il luogo di giacenza, come si fa gi&agrave; oggi. 
+          strong Semplice no?
+        p.space--top-2
+          = link_to "http://www.nexive.it/stampa-recapito-postale/servizi-recapito/raccomandata-digitale", target: "_blank" do
+            = image_tag "button__scopri.png", class: "nexive"
+    .grid__item.width-12-12.lap-6-12
+      .box
+        h3
+          | ASCOLTA LE RISPOSTE DEGLI ESPERTI NEXIVE SU RADIO24
+        = partial "partials/audio"

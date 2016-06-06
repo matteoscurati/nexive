@@ -8,7 +8,6 @@
 .plyr
   position: relative
   max-width: 100%
-  min-width: 200px
   font-family: Avenir,"Avenir Next","Helvetica Neue","Segoe UI",Helvetica,Arial,sans-serif
   direction: ltr
   box-sizing: border-box
@@ -203,6 +202,9 @@
   line-height: 1
   text-align: center
   transition: opacity .3s ease
+  height: 3rem
+  width: 3rem
+  border-radius: 50% !important
   .plyr__progress, .plyr__time, > button
     margin-left: 5px
   .plyr__progress:first-child, .plyr__time:first-child, > button:first-child
@@ -218,14 +220,17 @@
     flex-shrink: 0
     overflow: visible
     vertical-align: middle
-    padding: 7px
     border: 0
     background: 0 0
-    border-radius: 3px
+    border-radius: 50%
+    width: 3rem
+    height: 3rem
+    margin-left: -11px !important
     cursor: pointer
     transition: background .3s ease,color .3s ease,opacity .3s ease
     color: inherit
     svg
+      margin: 0 auto
       width: 18px
       height: 18px
       display: block

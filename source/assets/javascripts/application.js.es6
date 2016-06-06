@@ -1,7 +1,6 @@
 import $ from 'jQuery';
 import './vendor/jQuery-One-Page-Nav.js';
 import './vendor/player.js.es6';
-import './vendor/slider.js.es6';
 
 require('jquery-ui');
 require('jquery-ui-touch-punch');

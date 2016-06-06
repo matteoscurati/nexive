@@ -1,0 +1,39 @@
+.box
+  +light-font-family
+  +font-size(zeta)
+  border-top: 2px solid $sole--blue
+  border-bottom: 2px solid $sole--blue
+  +padding-top(2)
+  +padding-bottom(2)
+  +margin-top(3)
+
+  +at-breakpoint(lap)
+    +margin-top(0)
+
+  h3
+    +heading-font-family
+    +font-size(delta)
+
+.box__item
+  +padding-bottom(1)
+  border-bottom: 1px solid $light-bg-color
+  +margin-bottom(1)
+
+  &:last-child
+    border-bottom: none
+    margin-bottom: none
+
+.box__title
+  text-transform: uppercase
+  color: $orange
+  font-weight: 700
+
+.box__subtitle
+  font-weight: 700
+
+.box__description
+  +padding-top(0.5)
+
+.box__who
+  +padding-top(0.8)
+  color: $grey
