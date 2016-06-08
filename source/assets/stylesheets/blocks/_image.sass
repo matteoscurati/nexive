@@ -55,6 +55,14 @@
     border-left: 1px $light-body-color dotted
     +margin-left(1)
 
+.image__border--top
+  border-left: none
+  +margin-left(0)
+
+  +at-breakpoint(lap)
+    border-top: 1px $light-body-color dotted
+    +margin-left(1)
+
 .image__title
   +heading-font-family
   +font-size(beta)
